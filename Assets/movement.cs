@@ -16,10 +16,10 @@ public class movement : MonoBehaviour {
 		if(Input.GetKey(KeyCode.S)){
 			transform.Translate(0,0,-10f*Time.deltaTime);
 			}
-		if (Input.GetKeyDown (KeyCode.A)) {
+		if (Input.GetKeyDown (KeyCode.D)) {
 			transform.eulerAngles += new Vector3 (0, 90f, 0);
 		}
-		if (Input.GetKeyDown (KeyCode.D)) {
+		if (Input.GetKeyDown (KeyCode.A)) {
 			transform.eulerAngles += new Vector3 (0, -90f, 0);
 		}
 
