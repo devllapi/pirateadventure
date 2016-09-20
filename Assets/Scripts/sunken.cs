@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 public class sunken : MonoBehaviour {
+	public bool monsterZone=false;
 	public Transform player;
 	public Transform sunkenShip;
 	public Transform mountain;
@@ -19,9 +20,14 @@ public class sunken : MonoBehaviour {
 		}
 		if (player.position.x-mountain.position.x<Mathf.Abs(10f)){
 			gameText.text = "Convenience spotted, sailor! The map says to head south-east and fight a mysterious sea monster. Sounds dangerous!";
+			monsterZone = true;
 		}
 		if (monster.position.z-player.position.z>12f){
 			gameText.text = "Turns out the monster was totally non-confrontational! Who woulda guessed? Looking at the map, you come to understand that all there's left to do is head north-east and you'll find the treasure chest!";
+
+		}
+		if(player.position.x-monster.position.x>5f&&monsterZone==true){
+			gameText.text = "Looks like you're heading a bit too far east, sailor.";
 		}
 	}
 }
