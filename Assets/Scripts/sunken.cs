@@ -18,7 +18,7 @@ public class sunken : MonoBehaviour {
 			gameText.text = "You found a sunken pirate ship that left behind a map. \n Unlucky for them, lucky for you. Anyways, it says head west and look for Mount Convenience.";
 		}
 		if (player.position.x-mountain.position.x<Mathf.Abs(10f)){
-			gameText.text = "Convenience spotted, sailor! The map says to head south-east and fight a mysterious sea monster. Spooky!";
+			gameText.text = "Convenience spotted, sailor! The map says to head south-east and fight a mysterious sea monster. Sounds dangerous!";
 		}
 		if (monster.position.z-player.position.z>12f){
 			gameText.text = "Turns out the monster was totally non-confrontational! Who woulda guessed? Looking at the map, you come to understand that all there's left to do is head north-east and you'll find the treasure chest!";

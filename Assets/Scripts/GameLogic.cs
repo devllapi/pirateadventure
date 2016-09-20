@@ -17,7 +17,7 @@ public class GameLogic : MonoBehaviour {
 			gameText.text = "Shiver me timbers, you did it you scallywag!";
 		}
 		else if((player.position-treasure.position).magnitude<5f){
-			gameText.text="Press [SPACE] to collect your dubloons or something";
+			gameText.text="Press [SPACE] to collect your dubloons!";
 			if(Input.GetKeyDown(KeyCode.Space)){
 				didPlayerWin=true;
 			}
