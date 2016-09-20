@@ -24,6 +24,7 @@ public class sunken : MonoBehaviour {
 		}
 		if (monster.position.z-player.position.z>12f){
 			gameText.text = "Turns out the monster was totally non-confrontational! Who woulda guessed? Looking at the map, you come to understand that all there's left to do is head north-east and you'll find the treasure chest!";
+			monsterZone = false;
 
 		}
 		if(player.position.x-monster.position.x>5f&&monsterZone==true){
